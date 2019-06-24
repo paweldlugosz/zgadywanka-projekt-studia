@@ -16,5 +16,7 @@ namespace Zgadywanka_projekt_studia
         {
             InitializeComponent();
         }
+
+      
     }
 }
