@@ -64,7 +64,7 @@ namespace Proceduralnie
             return random.Next(s, e + 1);
         }
 
-        static int Load(string prompt = "Podaj liczbę lub x aby zakończyć")
+        static int Load(string prompt = "Podaj liczbę (lub x aby zakończyć)")
         {
             Console.WriteLine(prompt);
             while (true)

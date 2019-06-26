@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monolotycznie", "Monolotycz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proceduralnie", "Proceduralnie\Proceduralnie.csproj", "{EF738103-004E-48AC-A52D-2A693F4CF86A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obiektowo", "Obiektowo\Obiektowo.csproj", "{AF61F1C3-C791-4531-A38D-688F34D2A2F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{8DCDFE26-747A-45E1-843F-D1C57ABE88D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF61F1C3-C791-4531-A38D-688F34D2A2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF61F1C3-C791-4531-A38D-688F34D2A2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF61F1C3-C791-4531-A38D-688F34D2A2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF61F1C3-C791-4531-A38D-688F34D2A2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DCDFE26-747A-45E1-843F-D1C57ABE88D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DCDFE26-747A-45E1-843F-D1C57ABE88D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DCDFE26-747A-45E1-843F-D1C57ABE88D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DCDFE26-747A-45E1-843F-D1C57ABE88D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

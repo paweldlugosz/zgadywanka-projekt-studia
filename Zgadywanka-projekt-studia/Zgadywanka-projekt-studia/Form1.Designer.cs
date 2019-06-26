@@ -42,6 +42,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rozgrywka = new System.Windows.Forms.GroupBox();
             this.poddanie = new System.Windows.Forms.Button();
+            this.deceive = new System.Windows.Forms.CheckBox();
+            this.Czas = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.answer = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.rozgrywka.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +60,7 @@
             // 
             // liczba
             // 
-            this.liczba.Location = new System.Drawing.Point(76, 24);
+            this.liczba.Location = new System.Drawing.Point(76, 23);
             this.liczba.Name = "liczba";
             this.liczba.Size = new System.Drawing.Size(142, 20);
             this.liczba.TabIndex = 4;
@@ -75,8 +78,9 @@
             // 
             this.tabela.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Propozycja,
-            this.Odpowiedź});
-            this.tabela.Location = new System.Drawing.Point(6, 51);
+            this.Odpowiedź,
+            this.Czas});
+            this.tabela.Location = new System.Drawing.Point(5, 82);
             this.tabela.Name = "tabela";
             this.tabela.Size = new System.Drawing.Size(294, 153);
             this.tabela.TabIndex = 6;
@@ -86,12 +90,12 @@
             // Propozycja
             // 
             this.Propozycja.Text = "Propozycja";
-            this.Propozycja.Width = 147;
+            this.Propozycja.Width = 67;
             // 
             // Odpowiedź
             // 
             this.Odpowiedź.Text = "Odpowiedź";
-            this.Odpowiedź.Width = 147;
+            this.Odpowiedź.Width = 89;
             // 
             // label3
             // 
@@ -136,6 +140,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.deceive);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.doo);
             this.groupBox1.Controls.Add(this.nowaGra);
@@ -143,39 +148,64 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 110);
+            this.groupBox1.Size = new System.Drawing.Size(305, 127);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Start";
             // 
             // rozgrywka
             // 
+            this.rozgrywka.Controls.Add(this.answer);
             this.rozgrywka.Controls.Add(this.poddanie);
             this.rozgrywka.Controls.Add(this.label1);
             this.rozgrywka.Controls.Add(this.liczba);
             this.rozgrywka.Controls.Add(this.tabela);
             this.rozgrywka.Controls.Add(this.ok);
-            this.rozgrywka.Location = new System.Drawing.Point(12, 128);
+            this.rozgrywka.Location = new System.Drawing.Point(12, 145);
             this.rozgrywka.Name = "rozgrywka";
-            this.rozgrywka.Size = new System.Drawing.Size(305, 241);
+            this.rozgrywka.Size = new System.Drawing.Size(305, 276);
             this.rozgrywka.TabIndex = 12;
             this.rozgrywka.TabStop = false;
             this.rozgrywka.Text = "Rozgrywka";
             // 
             // poddanie
             // 
-            this.poddanie.Location = new System.Drawing.Point(6, 210);
+            this.poddanie.Location = new System.Drawing.Point(5, 241);
             this.poddanie.Name = "poddanie";
             this.poddanie.Size = new System.Drawing.Size(293, 23);
             this.poddanie.TabIndex = 7;
             this.poddanie.Text = "Poddaję się";
             this.poddanie.UseVisualStyleBackColor = true;
             // 
+            // deceive
+            // 
+            this.deceive.AutoSize = true;
+            this.deceive.Location = new System.Drawing.Point(9, 97);
+            this.deceive.Name = "deceive";
+            this.deceive.Size = new System.Drawing.Size(159, 17);
+            this.deceive.TabIndex = 11;
+            this.deceive.Text = "Komputer może raz oszukać";
+            this.deceive.UseVisualStyleBackColor = true;
+            // 
+            // Czas
+            // 
+            this.Czas.Text = "Czas";
+            this.Czas.Width = 133;
+            // 
+            // answer
+            // 
+            this.answer.AutoSize = true;
+            this.answer.Location = new System.Drawing.Point(6, 56);
+            this.answer.Name = "answer";
+            this.answer.Size = new System.Drawing.Size(47, 13);
+            this.answer.TabIndex = 8;
+            this.answer.Text = "Za mało";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 384);
+            this.ClientSize = new System.Drawing.Size(330, 434);
             this.Controls.Add(this.rozgrywka);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -203,6 +233,9 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox rozgrywka;
         private System.Windows.Forms.Button poddanie;
+        private System.Windows.Forms.ColumnHeader Czas;
+        private System.Windows.Forms.CheckBox deceive;
+        private System.Windows.Forms.Label answer;
     }
 }
 
