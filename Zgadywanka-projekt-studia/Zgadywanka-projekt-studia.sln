@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zgadywanka-projekt-studia",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monolotycznie", "Monolotycznie\Monolotycznie.csproj", "{63FD0D60-8B5D-45C3-ADE5-8DCAAECB669E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proceduralnie", "Proceduralnie\Proceduralnie.csproj", "{EF738103-004E-48AC-A52D-2A693F4CF86A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{63FD0D60-8B5D-45C3-ADE5-8DCAAECB669E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63FD0D60-8B5D-45C3-ADE5-8DCAAECB669E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63FD0D60-8B5D-45C3-ADE5-8DCAAECB669E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF738103-004E-48AC-A52D-2A693F4CF86A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
