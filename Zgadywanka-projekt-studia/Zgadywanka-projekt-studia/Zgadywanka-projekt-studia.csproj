@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Obiektowo\Obiektowo.csproj">
+      <Project>{AF61F1C3-C791-4531-A38D-688F34D2A2F9}</Project>
+      <Name>Obiektowo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,8 @@ namespace Obiektowo
 
         private static readonly Random random = new Random();
         private readonly int number;
+        private readonly bool cheat;
+        private bool cheated;
         public int? Number
         {
             get
@@ -23,8 +25,10 @@ namespace Obiektowo
         private readonly List<Step> history;
         public IReadOnlyList<Step> History => history;
 
-        public Game (int start = 0, int end = 100)
+        public Game (int start = 0, int end = 100, bool cheat = false)
         {
+            this.cheat = cheat;
+            this.cheated = false;
             history = new List<Step>();
             number = random.Next(Math.Min(start, end), Math.Max(start, end) + 1);
             State = GameState.Active;
@@ -39,6 +43,13 @@ namespace Obiektowo
                 response = Response.Equal;
             }
             else response = proposition < number ? Response.NotEnough : Response.TooMuch;
+
+            if (cheat && !cheated && response != Response.Equal && random.Next(0, 10) == 1)
+            {
+                response = response == Response.NotEnough ? Response.TooMuch : Response.NotEnough;
+                cheated = true;
+            }
+
             history.Add(new Step(proposition, response));
             return response;
         }
