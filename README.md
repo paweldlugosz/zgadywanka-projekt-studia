@@ -2,6 +2,7 @@
 
 ---
 Autor: Paweł Długosz
+Data: 2019.06.27
 ---
 
 ## Zawiera:
