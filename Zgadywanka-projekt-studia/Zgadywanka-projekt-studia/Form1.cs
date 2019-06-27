@@ -78,18 +78,25 @@ namespace Zgadywanka_projekt_studia
 
         private void add()
         {
-            if (game.Rate(Convert.ToInt32(input.Text)) == Game.Response.Equal)
+            Step step = game.Rate(Convert.ToInt32(input.Text));
+            response.Text = step.response.ToString();
+
+            if (step.response == Game.Response.Equal)
             {
+                response.ForeColor = Color.Black;
                 MessageBox.Show($"Udało Ci się odgadnąć liczbę. Wynosi ona {input.Text}.", "Gratulacje");
                 configGroup.Enabled = true;
                 gameGroup.Enabled = false;
+            }
+            else
+            {
+                response.ForeColor = Color.IndianRed;
             }
 
             input.Clear();
             input.Focus();
             check.Enabled = false;
 
-            Step step = game.History.Last();
             string[] row = { step.proposition.ToString(), step.response.ToString(), step.time.ToString() };
             ListViewItem listViewItem = new ListViewItem(row);
             table.Items.Add(listViewItem);
@@ -102,11 +109,6 @@ namespace Zgadywanka_projekt_studia
             configGroup.Enabled = true;
             gameGroup.Enabled = false;
             MessageBox.Show($"Liczba do zgadnięcia wynosiła {number}.", "Poddałeś się");
-        }
-
-        private void guess()
-        {
-
         }
 
     }

@@ -196,9 +196,9 @@
             this.response.AutoSize = true;
             this.response.Location = new System.Drawing.Point(6, 56);
             this.response.Name = "response";
-            this.response.Size = new System.Drawing.Size(47, 13);
+            this.response.Size = new System.Drawing.Size(122, 13);
             this.response.TabIndex = 8;
-            this.response.Text = "Za mało";
+            this.response.Text = "Oczekiwanie na liczbę...";
             // 
             // giveUp
             // 

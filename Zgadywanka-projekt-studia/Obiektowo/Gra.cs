@@ -34,7 +34,7 @@ namespace Obiektowo
             State = GameState.Active;
         }
 
-        public Response Rate(int proposition)
+        public Step Rate(int proposition)
         {
             Response response;
             if (proposition == number)
@@ -50,8 +50,9 @@ namespace Obiektowo
                 cheated = true;
             }
 
-            history.Add(new Step(proposition, response));
-            return response;
+            Step step = new Step(proposition, response);
+            history.Add(step);
+            return step;
         }
 
         public int GiveUp()
