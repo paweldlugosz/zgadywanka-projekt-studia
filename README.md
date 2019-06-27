@@ -1,9 +1,9 @@
-# Projekt zaliczeniowy na studia
-
 ---
 Autor: Paweł Długosz
 Data: 2019.06.27
 ---
+
+# Projekt zaliczeniowy na studia
 
 ## Zawiera:
 
